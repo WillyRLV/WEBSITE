@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <title>William Luis</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <a href="#home" class="punto active" data-scroll="home">
+            <span>Inicio</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#about" class="punto" data-scroll="about">
+            <span>Información</span>
+          </a>
+        </li>
+        <li>
+          <a href="#theme" class="punto" data-scroll="theme">
+            <span>Temas</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#challenge" class="punto" data-scroll="challenge">
+            <span>Retos</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <section class="sec" id="home">
+        <div class="perfil">
+          <div class="perfil-description">
+            <h3 class="name">William Luis</h3>
+            <div class="espacio">
+              <div class="cargo-box">
+                <h4 class="cargo">Ingeniería de sistemas</h4>
+              </div>
+            </div>
+
+            <p>
+              Estudiante de Ingeniería de sistemas actualmente enfocando en el
+              <strong>DESARROLLO WEB FULL STACK</strong> ,me gusta la tecnología
+              y las nuevas practicas para facilitar una la experiencia de
+              usuario.
+            </p>
+            &nbsp;
+            <div class="wrapper">
+              <div class="media">
+                <ul>
+                  <li><a type="text" class="link" href="https://www.facebook.com/williamR.L.V" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                  </li>
+                  <li><a type="text" class="link" href="https://www.instagram.com/williamr.l15/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li> <a type="text" class="link" href="https://github.com/WillyRLV" target="_blank"> <i class="fab fa-github"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <img
+            src="img/254996998_6328214893915476_4574556535513674670_n.jpg"
+            alt=""
+            width="400"
+          />
+        </div>
+      </section>
+      <section class="sec" id="about">Información</section>
+      <section class="sec" id="theme">Temas</section>
+      <section class="sec" id="challenge">Retos</section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(window).on("scroll", function () {
+          var link = $(".navbar a.punto");
+          var left = $(window).scrollLeft();
+
+          $(".sec").each(function () {
+            var id = $(this).attr("id");
+            var width = $(this).width();
+            var offset = $(this).offset().left - 150;
+
+            if (left >= offset && left < offset + width) {
+              link.removeClass("active");
+              $(".navbar")
+                .find('[data-scroll="' + id + '"]')
+                .addClass("active");
+            }
+          });
+        });
+      });
+    </script>
+    <script type="text/javascript" src="js/skrollr.js"></script>
+    <script type="text/javascript">
+      var s = skrollr.init();
+    </script>
+  </body>
+</html>

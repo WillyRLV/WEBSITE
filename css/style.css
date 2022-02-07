@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+/*.sec {
+    position: relative;
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    color: #DCAD9B;
+    background-color: #2A2B2D;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.sec:nth-child(3) {
+    background-color: aqua;
+    transition: 0.5s;
+}
+
+.sec:nth-child(4) {
+    background-color: rgb(60, 148, 90);
+    transition: 0.5s;
+}
+
+ .sec:nth-child(5) {
+    background-color: rgb(26, 119, 173);
+    transition: 0.5s;
+}
+
+*/
+
+body {
+  scrollbar-width: none;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  top: 0;
+  left: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*.container section {
+
+
+}
+*/
+
+.sec {
+  font-size: 3em;
+  position: relative;
+  color: #e0beb0;
+  background-color: rgb(42, 43, 45);
+  letter-spacing: 2px;
+  min-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ 
+}
+
+
+
+
+.sec:nth-child(2) {
+  background-color: #4d4f4e;
+  transition: 0.2s;
+}
+
+.sec:nth-child(3) {
+  background-color: #526465;
+  transition: 0.2s;
+}
+
+.sec:nth-child(4) {
+  background-color: #545c6c;
+  transition: 0.2s;
+}
+
+.navbar {
+  position: fixed;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  width: 200px;
+  position: relative;
+  text-align: right;
+}
+
+.navbar ul li .punto {
+  color: rgb(80, 57, 57);
+  display: block;
+  padding: 5px 0;
+}
+
+.navbar ul li .punto span {
+  display: inline-block;
+  background: #e0beb0;
+  letter-spacing: 1px;
+  padding: 10px 25px;
+  margin-right: 30px;
+  border-radius: 3px;
+  transform: translateX(5px);
+  transform: translateY(6px);
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+.navbar ul li:hover .punto span {
+  opacity: 1;
+}
+
+.navbar ul li .punto span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(7px, -40%);
+  border-left: 7px solid #e0beb0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  display: block;
+}
+
+.navbar ul li .punto::before,
+.navbar ul li .punto::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+  display: block;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar ul li .punto::before {
+  height: 5px;
+  width: 5px;
+  border: 2px solid rgb(136, 128, 128);
+  right: 0;
+  transform: translatey(30%);
+}
+
+.navbar ul li .punto.active::before,
+.navbar ul li:hover .punto::before {
+  border-color: #e0beb0;
+  background: #e0beb0;
+}
+
+.navbar ul li .punto::after {
+  height: 20px;
+  width: 20px;
+  border: 2px solid #e0beb0;
+  right: -7px;
+  transform: translateY(-50%) scale(0);
+  top: 22px;
+}
+
+.navbar ul li .punto.active::after,
+.navbar ul li:hover .punto::after {
+  transform: translateY(-10%) scale(1);
+}
+
+/*perfil*/
+
+.perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.perfil-description {
+  width: 30%;
+  font-size: 0.5em;
+  text-align: center;
+  margin: 20px;
+  padding-right: 25px;
+  padding-left: 30px;
+}
+
+.perfil-description h3 {
+  text-transform: uppercase;
+  font-size: 2em;
+  text-align: left;
+  height: 80px;
+  text-shadow: 4px 2px 9px    #545c6c;
+}
+
+.perfil-description p {
+  text-align: left;
+  font-size: 0.8em;
+  
+}
+
+.perfil img {
+  border-radius: 50%;
+  box-shadow: -1px 3px 30px 14px  #334444 ;
+}
+
+.cargo {
+  color: #2f2d2c;
+  font-weight: bold;
+  text-align: left;
+  width: 273px;
+}
+
+.cargo-box {
+    background-color :#b98d6b;
+    padding: 3px;
+    width: 274px;
+}
+
+.espacio {
+   height: 40px;
+}
+
+/*SOCIAL*/
+
+.media ul li {
+    list-style: none;
+    display: inline-block;
+    flex-direction: row;
+    font-size: 40px;
+    margin: 10px 30px;
+    cursor: pointer;
+    outline-color: none !important;
+
+}
+
+.link:hover {
+    color:#899094  ;
+    transition: 0.5s;
+}
+
+.link {
+    text-decoration: none;
+    color:   #9e8474  ;
+}
