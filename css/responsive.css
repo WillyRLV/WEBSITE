@@ -1,0 +1,46 @@
+
+@media only screen and (max-width: 1210px) {
+  .perfil img {
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: -1px 3px 30px 14px #1e2022;
+  }
+ 
+  .perfil {
+    transition: 0.3s;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+
+  }
+
+  .perfil-description {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .perfil img {
+    transition: 0.5s;
+  }
+
+  .cargo-box {
+    width: 300px;
+
+  }
+
+  .perfil-description h3 {
+  
+    text-align: center;
+    align-items: center;
+  }
+
+  .perfil-description p {
+    text-align: center;
+  }
+  
+  .navbar {
+    display: none;
+  }
+
+}
