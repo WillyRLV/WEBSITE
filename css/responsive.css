@@ -60,6 +60,38 @@ display: none;
 
 
 
+/*MOVIL*/
+
+@media screen and (min-width:400px) {
+
+  .perfil img {
+    width: 120px !important;
+  }
+  .perfil-description h3{
+    font-size: 3em;
+  }
+
+  .perfil-description p {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+  }
+
+
+  .cargo-box {
+    width: 100px !important;
+    padding: 1px;
+  }
+
+  .cargo {
+    font-size: 1.4em;
+  }
+}
+
+
+
+
 /*nav responsive*/
 
 
