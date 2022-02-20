@@ -1,0 +1,31 @@
+.card {
+    background-color: rgba(131, 131, 131, 0.335);
+    width: 290px;
+    height: 510px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card p {
+    font-size: 0.8em;
+}
+
+.img-desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 26vh;
+}
+
+.img-desc img {
+    border-radius: 15px;
+}
+
+.text-block {
+   
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+
+}

@@ -9,7 +9,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/stylethemes.css" />
 
     <title>William Luis</title>
   </head>
@@ -41,8 +42,45 @@
       </ul>
     </nav>
 
+    <!--NAV RESPONSIVE-->
+
+    <nav class="navbar2">
+      <ul>
+        <li class="list active2">
+          <a href="#home" class="punto1">
+            <span class="icon"><i class="fa-solid fa-house-chimney"></i> </span>
+            <span class="text">Inicio</span>
+          </a>
+        </li>
+
+        <li class="list">
+          <a href="#about" class="punto1">
+            <span class="icon"><i class="fa-solid fa-circle-info"></i></span>
+            <span class="text">Información</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#theme" class="punto1" >
+            <span class="icon"><i class="fa-solid fa-address-book"></i></span>
+            <span class="text">Temas</span>
+          </a>
+        </li>
+
+        <li class="list">
+          <a href="#challenge" class="punto1" >
+            <span class="icon"><i class="fa-solid fa-briefcase"></i></span>
+
+            <span class="text">Retos</span>
+          </a>
+        </li>
+        <div class="indicator"></div>
+      </ul>
+    </nav>
+
+    <!--.....................................-->
+
     <div class="container">
-      <section class="sec" id="home">
+      <section class="sec sec1" id="home">
         <div class="perfil">
           <div class="perfil-description">
             <h3 class="name">William Luis</h3>
@@ -62,11 +100,33 @@
             <div class="wrapper">
               <div class="media">
                 <ul>
-                  <li><a type="text" class="link" href="https://www.facebook.com/williamR.L.V" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                  <li>
+                    <a
+                      type="text"
+                      class="link"
+                      href="https://www.facebook.com/williamR.L.V"
+                      target="_blank"
+                      ><i class="fab fa-facebook-square"></i
+                    ></a>
                   </li>
-                  <li><a type="text" class="link" href="https://www.instagram.com/williamr.l15/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <li>
+                    <a
+                      type="text"
+                      class="link"
+                      href="https://www.instagram.com/williamr.l15/"
+                      target="_blank"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
                   </li>
-                  <li> <a type="text" class="link" href="https://github.com/WillyRLV" target="_blank"> <i class="fab fa-github"></i></a>
+                  <li>
+                    <a
+                      type="text"
+                      class="link"
+                      href="https://github.com/WillyRLV"
+                      target="_blank"
+                    >
+                      <i class="fab fa-github"></i
+                    ></a>
                   </li>
                 </ul>
               </div>
@@ -75,14 +135,61 @@
           <img
             src="img/254996998_6328214893915476_4574556535513674670_n.jpg"
             alt=""
-            width="400"/>
-            
+            width="400"
+          />
         </div>
       </section>
-      <section class="sec" id="about">Información</section>
-      <section class="sec" id="theme">Temas</section>
-      <section class="sec" id="challenge">Retos</section>
+      <section class="sec sec1" id="about">Información</section>
+      <section class="sec sec2" id="theme">
+        <div class="sec-title"><h2>DESARROLLO WEB FULL STACK</h2></div>
+        <div class="sec-themes">
+          <div class="card">
+            <div class="img-desc">
+              <img src="img/frontend-backend.png" alt="" width="200px" />
+            </div>
+            <div class="text-block">
+              <h2>FRONT-END</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur autem tempora temporibus aliquam iure asperiores
+                laboriosam dolorem.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img-desc">
+              <img src="img/backend.png" alt="" width="200px" />
+            </div>
+            <div class="text-block">
+              <h2>BACK-END</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Pariatur autem tempora temporibus aliquam iure asperiores
+                laboriosam dolorem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sec sec1" id="challenge">Retos</section>
     </div>
+<!--script diseño navbar mobile-->
+
+<script>
+  const list = document.querySelectorAll('.list');
+  function activeLink(){
+    list.forEach(
+      (item) =>
+    item.classList.remove('active2')
+    );
+
+   this.classList.add('active2');
+  }
+  list.forEach((item) => 
+  item.addEventListener('click',activeLink));
+</script>
+
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript">

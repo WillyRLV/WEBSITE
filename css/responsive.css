@@ -1,23 +1,26 @@
 
-@media only screen and (max-width: 1210px) {
+@media only screen and (max-width: 900px) {
   .perfil img {
-    width: 300px;
+    width: 235px !important;
     border-radius: 50%;
     box-shadow: -1px 3px 30px 14px #1e2022;
+  }
+
+  .sec1 {
+    font-size: 15px;
   }
  
   .perfil {
     transition: 0.3s;
-    justify-content: center;
     flex-direction: column-reverse;
-    align-items: center;
-
+ display: flex;
   }
 
   .perfil-description {
-    width: 100%;
+    width: 90%;
     text-align: center;
     align-items: center;
+  
   }
 
   .perfil img {
@@ -25,7 +28,7 @@
   }
 
   .cargo-box {
-    width: 300px;
+    width: 223px !important;
 
   }
 
@@ -40,7 +43,105 @@
   }
   
   .navbar {
+display: none;
+  
+  }
+
+  .cargo-box {
+    width: 240px;    
+    border-radius: 6px;
+  }
+
+.container{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/*nav responsive*/
+
+
+.container2{
+  width: 400px;
+  height: 70px;
+  background-color: aliceblue;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+}
+
+
+
+}
+
+@media screen  and (min-width:700px) {
+
+  .navbar2 {
     display: none;
   }
+}
+
+
+@media only screen and (max-width: 1300px) {
+  .sec1 {
+    font-size: 14px;
+    }
+
+    .perfil-description {
+      padding:1px;
+    }
+    .perfil img {
+      width: 350px;
+    }
+
+}
+
+/*SECCION 2*/
+@media   screen and (max-width: 670px) {
+
+  .sec2{
+  
+    font-size: 12px;
+  }
+  
+  .sec-themes{
+
+    flex-direction: column;
+    top: 140px;
+
+  
+
+
+  }
+
+  .card img{
+    width: 150px;
+
+
+  }
+  .card {
+    margin: 7px;
+    width: 240px !important;
+    height: 320px !important;
+  }
+  .img-desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 19.5vh !important;
+}
+.text-block {
+   
+  padding-left: 10px  !important;
+  padding-right: 10px !important ;
+  text-align: center;
+
+}
+
 
 }
